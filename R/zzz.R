@@ -7,8 +7,14 @@
 NULL
 
 .onLoad <- function(libname, pkgname) {
-    if (suppressWarnings(require('AWR.jars', quietly = TRUE)) == FALSE) {
+
+    ## check if the AWS Java SDJ jars are available and install if needed
+    if (requireNamespace('AWR.jars', quietly = TRUE) == FALSE) {
         warning('AWR.jars package not found, installing now...')
         install.packages('AWR.jars', repos = 'https://cardcorp.gitlab.io/AWR.jars')
     }
+
+    ## add jars to the Java classpath
+    .jpackage('AWR.jars')
+
 }
