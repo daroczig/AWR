@@ -8,6 +8,8 @@ Version: 1.11.76
 Date: 2017-01-08
 URL: https://gitlab.com/cardcorp/AWR.jars
 License: AGPL-3
-Imports: rJava
+Imports:
+    rJava,
+    utils
 Suggests: AWR.jars
 Additional_repositories: https://cardcorp.gitlab.io/AWR.jars

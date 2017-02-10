@@ -3,6 +3,8 @@
 #' Downloads and installs the AWS SDK for Java jars from the \code{ARW.jars} packages, which also adds to the Java classpath to be easily used in other R packages.
 #' @references \url{https://aws.amazon.com/sdk-for-java}
 #' @docType package
+#' @importFrom rJava .jpackage
+#' @importFrom utils install.packages
 #' @name AWR-package
 NULL
 
