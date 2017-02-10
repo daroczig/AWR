@@ -1,0 +1,13 @@
+Type: Package
+Package: AWR
+Maintainer: Gergely Daroczi <gergely.daroczi@card.com>
+Author: Gergely Daroczi <gergely.daroczi@card.com>
+Title: 'AWS' Java 'SDK' for R
+Description: Installs the compiled Java modules of 'AWS' 'SDK' to be used in downstream R packages interacting with Amazon Web Services.
+Version: 1.11.76
+Date: 2017-01-08
+URL: https://gitlab.com/cardcorp/AWR.jars
+License: AGPL-3
+Imports: rJava
+Suggests: AWR.jars
+Additional_repositories: https://cardcorp.gitlab.io/AWR.jars
