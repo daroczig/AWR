@@ -6,6 +6,15 @@
 #' @importFrom rJava .jpackage
 #' @importFrom utils install.packages packageVersion
 #' @name AWR-package
+#' @examples \dontrun{
+#' ## adding the jars to the Java classpath
+#' library(rJava)
+#'
+#' ## creating a client in Java
+#' kc <- .jnew("com.amazonaws.services.s3.AmazonS3Client")
+#' ## listing the account name
+#' kc$getS3AccountOwner()$getDisplayName()
+#' }
 NULL
 
 .onLoad <- function(libname, pkgname) {

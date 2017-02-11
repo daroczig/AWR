@@ -7,6 +7,17 @@
 \description{
 Downloads and installs the AWS SDK for Java jars from the \code{ARW.jars} packages, which also adds to the Java classpath to be easily used in other R packages.
 }
+\examples{
+\dontrun{
+## adding the jars to the Java classpath
+library(rJava)
+
+## creating a client in Java
+kc <- .jnew("com.amazonaws.services.s3.AmazonS3Client")
+## listing the account name
+kc$getS3AccountOwner()$getDisplayName()
+}
+}
 \references{
 \url{https://aws.amazon.com/sdk-for-java}
 }
