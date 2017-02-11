@@ -4,7 +4,7 @@
 #' @references \url{https://aws.amazon.com/sdk-for-java}
 #' @docType package
 #' @importFrom rJava .jpackage
-#' @importFrom utils install.packages
+#' @importFrom utils install.packages packageVersion
 #' @name AWR-package
 NULL
 

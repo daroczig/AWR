@@ -2,3 +2,4 @@
 
 importFrom(rJava,.jpackage)
 importFrom(utils,install.packages)
+importFrom(utils,packageVersion)
