@@ -1,3 +1,5 @@
+This repository has been **deprecated** as the `AWR` and `AWR.jars` packages were merged into https://gitlab.com/cardcorp/AWR as per recommendations of the CRAN maintainers.
+
 # AWR
 
 This R package installs the [AWS SDK for Java](https://aws.amazon.com/sdk-for-java) `jar` files from [AWR.jars](https://gitlab.com/cardcorp/AWR.jars) to be used in downstream R packages.
