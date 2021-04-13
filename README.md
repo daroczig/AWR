@@ -4,7 +4,20 @@ This R package makes the [AWS SDK for
 Java](https://aws.amazon.com/sdk-for-java) `jar` files available to be
 used in downstream R packages.
 
-Please note TODO botor
+## Lifecycle
+
+Please note that this package was originally created in 2015, when the
+Python integration in R was much less mature, so using the Java SDK
+made sense. Since then, using the Python SDK is much easier than relying
+on the Java SDK from R, so thus this package will be deprecated in the
+future, and I rather suggest using the `botor` R package (using the `boto3`
+Python package in the background) when possible:
+
+https://cran.r-project.org/package=botor
+
+This package is still maintained for the near future to provide support
+for the R packages depending on it, especially `AWR.Kinesis` that will
+still need Java support due to the `MultiLangDaemon`.
 
 ## Why the name?
 
